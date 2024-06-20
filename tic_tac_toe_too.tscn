@@ -1,0 +1,114 @@
+[gd_scene load_steps=2 format=3 uid="uid://bjaipkv0nqgb6"]
+
+[sub_resource type="Theme" id="Theme_xr6py"]
+default_base_scale = 4.0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_direction = 2
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="PanelContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "AAAAAAAAAAAAAAAAAAAAAAAAAA
+"
+
+[node name="GridContainer" type="GridContainer" parent="PanelContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = SubResource("Theme_xr6py")
+columns = 4
+
+[node name="Label" type="Label" parent="PanelContainer/HBoxContainer/GridContainer"]
+layout_mode = 2
+text = "AAAAAAAAAAAAAAAAAAAAAAAAAA
+"
+
+[node name="Label2" type="Label" parent="PanelContainer/HBoxContainer/GridContainer"]
+layout_mode = 2
+text = "AAAAAAAAAAAAAAAAAAAAAAAAAA
+"
+
+[node name="Label3" type="Label" parent="PanelContainer/HBoxContainer/GridContainer"]
+layout_mode = 2
+text = "AAAAAAAAAAAAAAAAAAAAAAAAAA
+"
+
+[node name="Label4" type="Label" parent="PanelContainer/HBoxContainer/GridContainer"]
+layout_mode = 2
+text = "AAAAAAAAAAAAAAAAAAAAAAAAAA
+"
+
+[node name="Label5" type="Label" parent="PanelContainer/HBoxContainer/GridContainer"]
+layout_mode = 2
+text = "AAAAAAAAAAAAAAAAAAAAAAAAAA
+"
+
+[node name="Label6" type="Label" parent="PanelContainer/HBoxContainer/GridContainer"]
+layout_mode = 2
+text = "AAAAAAAAAAAAAAAAAAAAAAAAAA
+"
+
+[node name="Label7" type="Label" parent="PanelContainer/HBoxContainer/GridContainer"]
+layout_mode = 2
+text = "AAAAAAAAAAAAAAAAAAAAAAAAAA
+"
+
+[node name="Label8" type="Label" parent="PanelContainer/HBoxContainer/GridContainer"]
+layout_mode = 2
+text = "AAAAAAAAAAAAAAAAAAAAAAAAAA
+"
+
+[node name="Label9" type="Label" parent="PanelContainer/HBoxContainer/GridContainer"]
+layout_mode = 2
+text = "AAAAAAAAAAAAAAAAAAAAAAAAAA
+"
+
+[node name="Label10" type="Label" parent="PanelContainer/HBoxContainer/GridContainer"]
+layout_mode = 2
+text = "AAAAAAAAAAAAAAAAAAAAAAAAAA
+"
+
+[node name="Label11" type="Label" parent="PanelContainer/HBoxContainer/GridContainer"]
+layout_mode = 2
+text = "AAAAAAAAAAAAAAAAAAAAAAAAAA
+"
+
+[node name="Label12" type="Label" parent="PanelContainer/HBoxContainer/GridContainer"]
+layout_mode = 2
+text = "AAAAAAAAAAAAAAAAAAAAAAAAAA
+"
+
+[node name="Label13" type="Label" parent="PanelContainer/HBoxContainer/GridContainer"]
+layout_mode = 2
+text = "AAAAAAAAAAAAAAAAAAAAAAAAAA
+"
+
+[node name="Label14" type="Label" parent="PanelContainer/HBoxContainer/GridContainer"]
+layout_mode = 2
+text = "AAAAAAAAAAAAAAAAAAAAAAAAAA
+"
+
+[node name="Label15" type="Label" parent="PanelContainer/HBoxContainer/GridContainer"]
+layout_mode = 2
+text = "AAAAAAAAAAAAAAAAAAAAAAAAAA
+"
+
+[node name="Label16" type="Label" parent="PanelContainer/HBoxContainer/GridContainer"]
+layout_mode = 2
+text = "AAAAAAAAAAAAAAAAAAAAAAAAAA
+"
