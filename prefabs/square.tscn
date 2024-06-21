@@ -1,0 +1,78 @@
+[gd_scene load_steps=9 format=3 uid="uid://rqkp5xemw4b3"]
+
+[ext_resource type="Script" path="res://scripts/Square.gd" id="1_0c1vv"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_py85u"]
+
+[sub_resource type="Theme" id="Theme_m8gdr"]
+
+[sub_resource type="Gradient" id="Gradient_v4es2"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_5tu4n"]
+gradient = SubResource("Gradient_v4es2")
+fill_to = Vector2(0, 0)
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_n3b8c"]
+diffuse_texture = SubResource("GradientTexture2D_5tu4n")
+
+[sub_resource type="FontFile" id="FontFile_e2k06"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/100/0 = Vector2(0, 0)
+cache/0/100/0/ascent = 0.0
+cache/0/100/0/descent = 0.0
+cache/0/100/0/underline_position = 0.0
+cache/0/100/0/underline_thickness = 0.0
+cache/0/100/0/scale = 1.0
+cache/0/100/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/100/0/kerning_overrides/100/0 = Vector2(0, 0)
+
+[sub_resource type="LabelSettings" id="LabelSettings_4nl1x"]
+font = SubResource("FontFile_e2k06")
+font_size = 100
+
+[node name="Square" type="ColorRect"]
+material = SubResource("CanvasItemMaterial_py85u")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = SubResource("Theme_m8gdr")
+script = ExtResource("1_0c1vv")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="TextureButton" type="TextureButton" parent="MarginContainer"]
+layout_mode = 2
+texture_normal = SubResource("CanvasTexture_n3b8c")
+stretch_mode = 1
+
+[node name="Label" type="Label" parent="MarginContainer/TextureButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "O"
+label_settings = SubResource("LabelSettings_4nl1x")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
