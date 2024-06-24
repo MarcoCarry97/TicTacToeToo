@@ -3,9 +3,9 @@ extends ColorRect
 
 enum Symbol
 {
-	NONE,
-	CIRCLE,
-	CROSS
+	NONE=-1,
+	CIRCLE=0,
+	CROSS=4
 }
 
 @export var _coords:Vector2i
@@ -33,6 +33,8 @@ func get_symbol():
 func on_pressed():
 	on_click.emit()
 	
+func clear():
+	set_symbol(Symbol.NONE)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -44,8 +46,6 @@ func _ready():
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	
-	
 	var text=" "
 	if(_symbol==Symbol.CIRCLE):
 		text="O"

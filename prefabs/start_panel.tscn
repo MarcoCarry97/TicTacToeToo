@@ -1,0 +1,105 @@
+[gd_scene load_steps=6 format=3 uid="uid://cgp48g3lfax3d"]
+
+[ext_resource type="Script" path="res://scripts/StartPanel.gd" id="1_4hx04"]
+
+[sub_resource type="FontFile" id="FontFile_arpxi"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/50/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/100/0 = Vector2(0, 0)
+cache/0/50/0/ascent = 0.0
+cache/0/50/0/descent = 0.0
+cache/0/50/0/underline_position = 0.0
+cache/0/50/0/underline_thickness = 0.0
+cache/0/50/0/scale = 1.0
+cache/0/50/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/50/0/kerning_overrides/50/0 = Vector2(0, 0)
+cache/0/50/0/kerning_overrides/100/0 = Vector2(0, 0)
+cache/0/100/0/ascent = 0.0
+cache/0/100/0/descent = 0.0
+cache/0/100/0/underline_position = 0.0
+cache/0/100/0/underline_thickness = 0.0
+cache/0/100/0/scale = 1.0
+cache/0/100/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/100/0/kerning_overrides/50/0 = Vector2(0, 0)
+cache/0/100/0/kerning_overrides/100/0 = Vector2(0, 0)
+
+[sub_resource type="LabelSettings" id="LabelSettings_o1p54"]
+font = SubResource("FontFile_arpxi")
+font_size = 100
+
+[sub_resource type="LabelSettings" id="LabelSettings_md1og"]
+line_spacing = 50.0
+font_size = 50
+
+[sub_resource type="LabelSettings" id="LabelSettings_ybd08"]
+font_size = 50
+
+[node name="StartPanel" type="PanelContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4hx04")
+
+[node name="PanelMargin" type="MarginContainer" parent="."]
+layout_mode = 2
+
+[node name="PanelContent" type="VBoxContainer" parent="PanelMargin"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="PanelMargin/PanelContent"]
+layout_mode = 2
+text = "Tic Tac Toe Too"
+label_settings = SubResource("LabelSettings_o1p54")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonContainer" type="HBoxContainer" parent="PanelMargin/PanelContent"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PlayButtonMargin" type="MarginContainer" parent="PanelMargin/PanelContent/ButtonContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PlayButton" type="TextureButton" parent="PanelMargin/PanelContent/ButtonContainer/PlayButtonMargin"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelMargin/PanelContent/ButtonContainer/PlayButtonMargin/PlayButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Start"
+label_settings = SubResource("LabelSettings_md1og")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="QuitButtonMargin" type="MarginContainer" parent="PanelMargin/PanelContent/ButtonContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="QuitButton" type="TextureButton" parent="PanelMargin/PanelContent/ButtonContainer/QuitButtonMargin"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelMargin/PanelContent/ButtonContainer/QuitButtonMargin/QuitButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Quit"
+label_settings = SubResource("LabelSettings_ybd08")
+horizontal_alignment = 1
+vertical_alignment = 1

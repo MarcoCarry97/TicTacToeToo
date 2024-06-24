@@ -1,0 +1,120 @@
+[gd_scene load_steps=6 format=3 uid="uid://mju1nv8j2fa5"]
+
+[ext_resource type="Script" path="res://GameBoard.gd" id="1_plpn2"]
+[ext_resource type="Script" path="res://scripts/GridField.gd" id="2_ganyn"]
+[ext_resource type="PackedScene" uid="uid://rqkp5xemw4b3" path="res://prefabs/square.tscn" id="3_fa2ln"]
+
+[sub_resource type="FontFile" id="FontFile_y7c5q"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/50/0 = Vector2(0, 0)
+cache/0/50/0/ascent = 0.0
+cache/0/50/0/descent = 0.0
+cache/0/50/0/underline_position = 0.0
+cache/0/50/0/underline_thickness = 0.0
+cache/0/50/0/scale = 1.0
+cache/0/50/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/50/0/kerning_overrides/50/0 = Vector2(0, 0)
+
+[sub_resource type="LabelSettings" id="LabelSettings_rwhb7"]
+font = SubResource("FontFile_y7c5q")
+font_size = 50
+
+[node name="GameBoard" type="CanvasLayer"]
+layer = 0
+script = ExtResource("1_plpn2")
+
+[node name="GridField" type="PanelContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_ganyn")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GridField"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GridField/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="GridField/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Turn of: "
+label_settings = SubResource("LabelSettings_rwhb7")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="GridField/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 30
+
+[node name="GridContainer" type="GridContainer" parent="GridField/HBoxContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 20
+columns = 4
+
+[node name="Square" parent="GridField/HBoxContainer/MarginContainer/GridContainer" instance=ExtResource("3_fa2ln")]
+layout_mode = 2
+
+[node name="Square2" parent="GridField/HBoxContainer/MarginContainer/GridContainer" instance=ExtResource("3_fa2ln")]
+layout_mode = 2
+
+[node name="Square3" parent="GridField/HBoxContainer/MarginContainer/GridContainer" instance=ExtResource("3_fa2ln")]
+layout_mode = 2
+
+[node name="Square4" parent="GridField/HBoxContainer/MarginContainer/GridContainer" instance=ExtResource("3_fa2ln")]
+layout_mode = 2
+
+[node name="Square5" parent="GridField/HBoxContainer/MarginContainer/GridContainer" instance=ExtResource("3_fa2ln")]
+layout_mode = 2
+
+[node name="Square6" parent="GridField/HBoxContainer/MarginContainer/GridContainer" instance=ExtResource("3_fa2ln")]
+layout_mode = 2
+
+[node name="Square7" parent="GridField/HBoxContainer/MarginContainer/GridContainer" instance=ExtResource("3_fa2ln")]
+layout_mode = 2
+
+[node name="Square8" parent="GridField/HBoxContainer/MarginContainer/GridContainer" instance=ExtResource("3_fa2ln")]
+layout_mode = 2
+
+[node name="Square9" parent="GridField/HBoxContainer/MarginContainer/GridContainer" instance=ExtResource("3_fa2ln")]
+layout_mode = 2
+
+[node name="Square10" parent="GridField/HBoxContainer/MarginContainer/GridContainer" instance=ExtResource("3_fa2ln")]
+layout_mode = 2
+
+[node name="Square11" parent="GridField/HBoxContainer/MarginContainer/GridContainer" instance=ExtResource("3_fa2ln")]
+layout_mode = 2
+
+[node name="Square12" parent="GridField/HBoxContainer/MarginContainer/GridContainer" instance=ExtResource("3_fa2ln")]
+layout_mode = 2
+
+[node name="Square13" parent="GridField/HBoxContainer/MarginContainer/GridContainer" instance=ExtResource("3_fa2ln")]
+layout_mode = 2
+
+[node name="Square14" parent="GridField/HBoxContainer/MarginContainer/GridContainer" instance=ExtResource("3_fa2ln")]
+layout_mode = 2
+
+[node name="Square15" parent="GridField/HBoxContainer/MarginContainer/GridContainer" instance=ExtResource("3_fa2ln")]
+layout_mode = 2
+
+[node name="Square16" parent="GridField/HBoxContainer/MarginContainer/GridContainer" instance=ExtResource("3_fa2ln")]
+layout_mode = 2
